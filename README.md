@@ -1,2 +1,2 @@
-#Most epic spigot docker you will ever see
-
+#Spigot docker
+A simple docker image that creates a spigot minecraft server
