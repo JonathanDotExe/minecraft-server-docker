@@ -1,8 +1,8 @@
 FROM openjdk:8-alpine
-ARG MINECRAFT_VERSION=1.16.4
+ARG MINECRAFT_VERSION=1.16.5
 RUN apk add --no-cache wget && \
-    apk add --no-cache git && \
-    mkdir buildtools && \
+    apk add --no-cache git
+RUN mkdir buildtools && \
     cd buildtools && \
     wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 RUN cd buildtools && \
